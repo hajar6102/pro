@@ -1,0 +1,195 @@
+/* Global font styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FEFFED;
+}
+
+/* Header styling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  background-color: #FEFFED;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Header container layout */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 6%;
+  margin-left: 3%;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+}
+
+.logout img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logout-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #FEFFED;
+  color: #3B2F2F;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.logout-button:hover {
+  color: #000000;
+  background-color: transparent;
+}
+
+/* Profile container styles */
+.profile-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 11%;
+}
+
+.profile-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Flexbox layout for profile content */
+.profile-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.profile-pic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.profile-pic-section img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.change-pic {
+  cursor: pointer;
+  color: #3B2F2F;
+  font-weight: bold;
+}
+
+.change-pic:hover {
+  color: rgb(2, 2, 97);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.delete-img {
+  margin-top: 20px;
+  color: white;
+  border: none;
+  background-color: #3B2F2F;
+  border-radius: 5px;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-img:hover {
+  background-color: #4A423B;
+}
+
+/* Form section styling */
+.form-section {
+  width: 70%;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #3B2F2F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4A423B;
+}
+
+/* Back Arrow */
+.back-arrow {
+  position: absolute;
+  left: 20px;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 3%;
+}
+
+.back-arrow a {
+  text-decoration: none;
+  color: #3B2F2F;
+}
+
+.back-arrow a:hover {
+  color: rgb(2, 2, 97);
+}

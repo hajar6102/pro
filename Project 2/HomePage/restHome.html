@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="../images/logo1.png">
+
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo on the left -->
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+        <span>JU-Delivery</span>
+      </div>
+  
+      <!-- Log Out button on the right -->
+      <div class="logout">
+        <button class="logout-button">Log Out</button>
+        <a href="..//profilepage/profilepage.html"><img id="headerProfilePic" class="profileimg" src="../images/profile logo.png" /></a>
+
+      </div>
+    </div>
+  </header>
+  
+  <!-- Page Content -->
+  <div id="mainContent" class="container">
+    <!-- Dropdown menus -->
+    
+    
+
+    <h1>Restaurant Menu Management</h1>
+
+    <!-- Big Buttons to select actions -->
+    <div class="action-buttons">
+      <button id="addNewItemButton">Add New Item</button><br>
+      <button id="editMenuItemsButton">Edit Menu Items</button>
+    </div>
+
+    <!-- Form to add a new dish, initially hidden -->
+    <form id="addDishForm" class="hidden">
+      <h2>Add New Item</h2>
+      <input type="text" id="dishName" placeholder="Item Name" required />
+      <input type="number" id="dishPrice" placeholder="Item Price" required />
+      <input type="file" id="dishImage" accept="image/*" required />
+      <button type="submit">Add Item</button>
+    </form>
+
+    <!-- Menu display area for editing, initially hidden -->
+    <div id="editMenuForm" class="hidden">
+      <h2>Edit Menu Items</h2>
+      <div id="menuList" class="menu-list"></div>
+    </div>
+
+    <!-- Success message area -->
+    <div id="messageBox" class="message-box hidden"></div>
+  </div>
+
+  <script src="../HomePage/app.js"></script>
+</body>
+</html>
