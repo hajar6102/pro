@@ -92,7 +92,11 @@ nav li {
     flex-direction: column;
     justify-content: center;
 }
-
+@media (max-width:767px) {
+    .main .sm-margin{
+        margin-top: 90px;
+    }
+}
 .nav-item .nav-link.active,
 .nav-item .nav-link:hover {
     color: white;
@@ -170,12 +174,40 @@ form li:hover {
 
 /*restaurants list*/
 
+.resturants{
+    background: url(./images/ju3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-y: hidden;
+}
+.resturants::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
 .card {
     margin: 0 auto 20px;
 }
-
+.restaurants-list .card {
+    border-color: orange;
+}
+.restaurants-list .card-body{
+    padding: 10px !important;
+    text-align: center;
+}
+.restaurants-list .card .btn{
+    background-color: var(--main-brown);
+    border-color: none;
+    color: white;
+}
 .restaurants-list img {
-    height: 214.5px;
+    height: 150px;
 }
 
 /*end of restaurants list*/
@@ -207,7 +239,6 @@ form li:hover {
     position: relative;
     background-color: var(--main-brown);
     color: white;
-    animation-name: updown;
 }
 
 .menus .btn::after {
@@ -221,6 +252,45 @@ form li:hover {
 
 .menus .btn:hover::after {
     right: 10px;
+}
+.a3mal .main-bg{
+    position: relative;
+    background: url(./images/a3mal-saj.jpg) ;
+}
+.it-milk-bar .main-bg{
+    position: relative;
+    background: url(./images/it-milk-bar.jpg) ;
+    background-size: cover;
+}
+.main-snackway .main-bg{
+    position: relative;
+    background: url(./images/snackway.jpg) ;
+}
+.medicine-milkbar .main-bg{
+    position: relative;
+    background: url(./images/medicine-milkbar.jpg) ;
+}
+.student-snackway .main-bg{
+    position: relative;
+    background: url(./images/student-snackway.jpg) ;
+}
+ .zera3a-saj .main-bg{
+    position: relative;
+    background: url(./images/a3mal-saj.jpg) ;
+} /* we have to modify it !!!!*/
+/* main-bg::after to be applied for all bgs.*/
+.main-bg::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+ header, .menus{
+    position: relative;
+    z-index: 2;
 }
 
 /* end of menues*/
